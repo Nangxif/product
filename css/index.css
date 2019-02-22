@@ -1,0 +1,281 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+@font-face {
+	font-family: 'SiYuanRegular';
+	src: url('http://cdn.webfont.youziku.com/webfonts/nomal/127684/46827/5c6f8b19f629d805c8feab84.gif?r=99207577764');
+	src: url('http://cdn.webfont.youziku.com/webfonts/nomal/127684/46827/5c6f8b19f629d805c8feab84.gif?r=99207577764?#iefix') format('embedded-opentype'),
+		url('http://cdn.webfont.youziku.com/webfonts/nomal/127684/46827/5c6f8b19f629d805c8feab84.png?r=99207577764') format('woff2'),
+		url('http://cdn.webfont.youziku.com/webfonts/nomal/127684/46827/5c6f8b19f629d805c8feab84.bmp?r=99207577764') format('woff'),
+		url('http://cdn.webfont.youziku.com/webfonts/nomal/127684/46827/5c6f8b19f629d805c8feab84.jpg?r=99207577764') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+}
+.rb_content{
+	margin-top: 45px;
+	position: relative;
+	overflow: hidden;
+	background-color: #f0f0f0;
+}
+
+/*回到顶部*/
+.rb_to_top{
+	display: none;
+    z-index: 3;
+    opacity: 0.5;
+    background-image: url('../images/back-to-top1.png');
+    cursor: pointer;
+}
+.rb_to_top:hover,.rb_to_top:focus{
+	opacity: 1;
+    background-image: url('../images/back-to-top.png');
+}
+/*内容开始*/
+@media (min-width: 768px){
+	/*图片*/
+	.rb_products_item_1{
+		background-image: url('../images/pc/1G550A.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_2{
+		background-image: url('../images/pc/2G100a.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_3{
+		background-image: url('../images/pc/3G90A.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_4{
+		background-image: url('../images/pc/4G35S.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_5{
+		background-image: url('../images/pc/5Q9.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_6{
+		background-image: url('../images/pc/6Q7s.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_7{
+		background-image: url('../images/pc/7A3.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.rb_products_item_8{
+		background-image: url('../images/pc/8A2.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+@media (max-width: 767px){
+	/*图片*/
+}
+
+
+
+
+@media all and  (min-width: 1172px){
+	#rb_product_list{
+		margin: 0 auto;
+		width: 1172px;
+		font-family: 'SiYuanRegular';
+	}
+}
+@media all and  (max-width: 1171px){
+	#rb_product_list{
+		width: 100%;
+		font-family: 'SiYuanRegular';
+	}
+}
+
+
+
+@media all and  (min-width: 768px){
+	.max{
+		display: block !important;
+	}
+	.min{
+		display: none !important;
+	}
+	
+	#rb_product_list #student_slab,#rb_product_list #child_slab, #rb_product_list #watch{
+		width: 100%;
+	}
+	#rb_product_list .rb_product_title{
+		width: 100%;
+		margin: 2.846% 0;
+	}
+	#rb_product_list .rb_products{
+		position: relative;
+		margin-top: -1.5%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between; 
+		flex-wrap: wrap;
+	}
+	#rb_product_list .rb_products .rb_products_item{
+		position: relative;
+		width:49.489%;/*574.86*/
+		padding-top: 36.834%;
+		background-color: white;
+		margin-top: 1.2%;
+		cursor: pointer;
+		transition: all .3s;
+	}
+	#rb_product_list .rb_products .rb_products_item:hover{
+		top: -5px;
+		box-shadow: rgb(204,204,204) 0px 10px 20px;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_name{
+		position: absolute;
+		top: 10.4545%;
+		width: 100%;
+		color: #0d0d0d;
+		font-weight: 600;
+		text-align: center;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_descrip{
+		position: absolute;
+		top: 20.34%;
+		width: 100%;
+		color: #0d0d0d;
+		text-align: center;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_view{
+		position: absolute;
+		left: 22.413%;
+		top: 27.73%;
+		width: 55.667%;
+		height: 50.69%;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 9.318%;
+		width: 20.862%;
+		height: 7.045%;
+		border: 1px solid #999;
+		border-radius: 15px;
+	    color: #333;
+		text-align: center;
+		text-decoration: none;
+		transition: all .1s;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_link.rb_products_active{
+		background-color: #f8f8f8;
+		border: 1px solid #333333;
+	}
+	.rb_products:last-child{
+		margin-bottom: 2.846%;
+	}
+	
+}
+@media all and (max-width: 767px){
+	.max{
+		display: none !important;
+	}
+	.min{
+		display: block !important;
+	}
+	
+
+}
+
+
+
+
+
+
+/*统一字体大小*/
+@media screen and (min-width:1184px) {
+	.rb_products_title_size{
+		font-size: 22px;
+	}
+	.rb_products_size{
+		font-size: 28px;
+	}
+	.rb_products_descrip_size{
+		font-size: 14px;
+	}
+	.rb_products_btn_size{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:1183px) and (min-width:1098px) {
+	.rb_products_title_size{
+		font-size: 21px;
+	}
+	.rb_products_size{
+		font-size: 26px;
+	}
+	.rb_products_descrip_size{
+		font-size: 13px;
+	}
+	.rb_products_btn_size{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:1097px) and (min-width:993px) {
+	.rb_products_title_size{
+		font-size: 20px;
+	}
+	.rb_products_size{
+		font-size: 25px;
+	}
+	.rb_products_descrip_size{
+		font-size: 12px;
+	}
+	.rb_products_btn_size{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width:992px) and (min-width:852px) {
+	.rb_products_title_size{
+		font-size: 19px;
+	}
+	.rb_products_size{
+		font-size: 24px;
+	}
+	.rb_products_descrip_size{
+		font-size: 12px;
+	}
+	.rb_products_btn_size{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width:851px) and (min-width:768px) {
+	.rb_products_title_size{
+		font-size: 18px;
+	}
+	.rb_products_size{
+		font-size: 23px;
+	}
+	.rb_products_descrip_size{
+		font-size: 12px;
+	}
+	.rb_products_btn_size{
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+
+
