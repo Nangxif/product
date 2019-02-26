@@ -64,63 +64,75 @@
 	    <div class="rb_content">
 	    	<div id="rb_product_list">
 				<div id="student_slab">
-					<p class="rb_product_title rb_products_title_size">学生平板</p>
+					<p class="rb_product_title rb_products_title_size max">学生平板</p>
 					<div class="rb_products">
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_1">
+							<div class="rb_products_bg"></div>
 							<p class="rb_products_item_name rb_products_size">G550A</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">旗舰新升级</p>
 							<div class="rb_products_item_view rb_products_item_1"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_2">
 							<p class="rb_products_item_name rb_products_size">G100A</p>
-							<p class="rb_products_item_descrip rb_products_descrip_size">行业爆品</p>
+							<p class="rb_products_item_descrip rb_products_descrip_size">热销爆品</p>
 							<div class="rb_products_item_view rb_products_item_2"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_3">
 							<p class="rb_products_item_name rb_products_size">G90A</p>
 							<div class="rb_products_item_view rb_products_item_3"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 						</div>
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_4">
 							<p class="rb_products_item_name rb_products_size">G35S</p>
 							<div class="rb_products_item_view rb_products_item_4"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 						</div>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 				<div id="child_slab">
-					<p class="rb_product_title rb_products_title_size">儿童平板</p>
+					<p class="rb_product_title rb_products_title_size max">儿童平板</p>
 					<div class="rb_products">
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_5">
+							<div class="rb_products_bg min"></div>
 							<p class="rb_products_item_name rb_products_size">Q9</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">新品</p>
 							<div class="rb_products_item_view rb_products_item_5"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_6">
 							<p class="rb_products_item_name rb_products_size">Q7S</p>
 							<div class="rb_products_item_view rb_products_item_6"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 				<div id="watch">
-					<p class="rb_product_title rb_products_title_size">电话手表</p>
+					<p class="rb_product_title rb_products_title_size max">电话手表</p>
 					<div class="rb_products">
-						<div class="rb_products_item">
-							<p class="rb_products_item_name rb_products_size">A3/W7</p>
-							<p class="rb_products_item_descrip rb_products_descrip_size">热卖</p>
+						<div class="rb_products_item rb_products_7">
+							<div class="rb_products_bg min"></div>
+							<p class="rb_products_item_name rb_products_size">A3</p>
 							<div class="rb_products_item_view rb_products_item_7"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item">
+						<div class="rb_products_item rb_products_8">
+							<div class="rb_products_bg min"></div>
 							<p class="rb_products_item_name rb_products_size">A2</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">新品</p>
 							<div class="rb_products_item_view rb_products_item_8"></div>
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
+							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 	    	</div>
@@ -128,11 +140,16 @@
 	</body>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
-		$(".rb_products_item").on("mouseover",function(){
-			$(this).find("a").addClass("rb_products_active");
+		$(".rb_products_item").on("mouseenter",function(){
+			// $(this).find("a").addClass("rb_products_active");
+			$(this).addClass("rb_products_item_active");
+			// $(this).animate({top:"-5px"},100);
 		})
-		$(".rb_products_item").on("mouseout",function(){
-			$(this).find("a").removeClass("rb_products_active");
+		$(".rb_products_item").on("mouseleave",function(){
+			// $(this).find("a").removeClass("rb_products_active");
+			$(this).removeClass("rb_products_item_active");
+			// $(this).animate({top:"0px"},100);
 		})
+
 	</script>
 </html>
