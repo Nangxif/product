@@ -66,7 +66,7 @@
 				<div id="student_slab">
 					<p class="rb_product_title rb_products_title_size max">学生平板</p>
 					<div class="rb_products">
-						<div class="rb_products_item rb_products_1">
+						<div class="rb_products_item rb_products_1 blackColor">
 							<p class="rb_products_item_name rb_products_size">G550A</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">旗舰新升级</p>
 							<img src="./images/pc/1G550A.png" class="rb_products_item_view max" />
@@ -74,7 +74,7 @@
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item rb_products_2">
+						<div class="rb_products_item rb_products_2 whiteColor">
 							<p class="rb_products_item_name rb_products_size">G100A</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">热销爆品</p>
 							<img src="./images/pc/2G100a.png" class="rb_products_item_view max" />
@@ -82,13 +82,13 @@
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item rb_products_3">
+						<div class="rb_products_item rb_products_3 blackColor">
 							<p class="rb_products_item_name rb_products_size">G90A</p>
 							<img src="./images/pc/3G90A.png" class="rb_products_item_view max" />
 							<img src="./images/mobile/3G90A-min.jpg" class="rb_products_item_view min" />
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 						</div>
-						<div class="rb_products_item rb_products_3">
+						<div class="rb_products_item rb_products_3 blackColor">
 							<p class="rb_products_item_name rb_products_size">G35S</p>
 							<img src="./images/pc/4G35S.png" class="rb_products_item_view max" />
 							<img src="./images/mobile/4G35S-min.jpg" class="rb_products_item_view min" />
@@ -100,7 +100,7 @@
 				<div id="child_slab">
 					<p class="rb_product_title rb_products_title_size max">儿童平板</p>
 					<div class="rb_products">
-						<div class="rb_products_item rb_products_2">
+						<div class="rb_products_item rb_products_2 whiteColor">
 							<p class="rb_products_item_name rb_products_size">Q9</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">新品</p>
 							<img src="./images/pc/5Q9.png" class="rb_products_item_view max" />
@@ -108,7 +108,7 @@
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item rb_products_2">
+						<div class="rb_products_item rb_products_2 blackColor">
 							<p class="rb_products_item_name rb_products_size">Q7S</p>
 							<img src="./images/pc/6Q7s.png" class="rb_products_item_view max" />
 							<img src="./images/mobile/6Q7s-min.jpg" class="rb_products_item_view min" />
@@ -121,7 +121,7 @@
 				<div id="watch">
 					<p class="rb_product_title rb_products_title_size max">电话手表</p>
 					<div class="rb_products">
-						<div class="rb_products_item rb_products_2">
+						<div class="rb_products_item rb_products_2 whiteColor">
 							<p class="rb_products_item_name rb_products_size">A3</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">防水防尘 视频通话</p>
 							<img src="./images/pc/7A3.png" class="rb_products_item_view max" />
@@ -129,7 +129,7 @@
 							<a class="rb_products_item_link rb_products_btn_size" href="#">了解详情</a>
 							<a class="rb_products_item_link min" href="#">立即购买</a>
 						</div>
-						<div class="rb_products_item rb_products_2">
+						<div class="rb_products_item rb_products_2 blackColor">
 							<p class="rb_products_item_name rb_products_size">A2</p>
 							<p class="rb_products_item_descrip rb_products_descrip_size">新品</p>
 							<img src="./images/pc/8A2.png" class="rb_products_item_view max" />
@@ -142,6 +142,8 @@
 				</div>
 	    	</div>
 	    </div>
+	    <!-- 回到顶部 -->
+		<a class="rb_to_top"></a>
 	</body>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
@@ -154,6 +156,26 @@
 			// $(this).find("a").removeClass("rb_products_active");
 			$(this).removeClass("rb_products_item_active");
 			// $(this).animate({top:"0px"},100);
+		})
+
+
+		//下拉菜单置顶和回到顶部按钮
+		$(window).on("scroll",function(){
+			//回到顶部按钮的消失与出现
+			var scrollTop = $(document).scrollTop(),
+				bodyHeight = $(window).height()/2;
+			if (scrollTop > bodyHeight) {
+				$(".rb_to_top").css('display','block');
+			}else{
+				$(".rb_to_top").css('display','none');
+			}
+		})
+
+		//回到顶部按钮操作
+		$(".rb_to_top").on("click",function(){
+			$('html,body').animate({
+				scrollTop:0
+			});
 		})
 
 	</script>

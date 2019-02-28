@@ -3,16 +3,6 @@
 	padding: 0px;
 	box-sizing:border-box;
 }
-@font-face {
-	font-family: 'SiYuanRegular';
-	src: url('http://cdn.webfont.youziku.com/webfonts/nomal/127762/46827/5c74b7b9f629d800d0a2cbb7.gif?r=99546681899');
-	src: url('http://cdn.webfont.youziku.com/webfonts/nomal/127762/46827/5c74b7b9f629d800d0a2cbb7.gif?r=99546681899?#iefix') format('embedded-opentype'),
-	url('http://cdn.webfont.youziku.com/webfonts/nomal/127762/46827/5c74b7b9f629d800d0a2cbb7.png?r=99546681899') format('woff2'),
-	url('http://cdn.webfont.youziku.com/webfonts/nomal/127762/46827/5c74b7b9f629d800d0a2cbb7.bmp?r=99546681899') format('woff'),
-	url('http://cdn.webfont.youziku.com/webfonts/nomal/127762/46827/5c74b7b9f629d800d0a2cbb7.jpg?r=99546681899') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 .rb_content{
 	margin-top: 45px;
 	position: relative;
@@ -40,13 +30,13 @@
 	#rb_product_list{
 		margin: 0 auto;
 		width: 1172px;
-		font-family: 'SiYuanRegular';
+		font-family: '黑体';
 	}
 }
 @media all and  (max-width: 1171px){
 	#rb_product_list{
 		width: 100%;
-		font-family: 'SiYuanRegular';
+		font-family: '黑体';
 	}
 }
 
@@ -58,6 +48,13 @@
 	}
 	.min{
 		display: none !important;
+	}
+	.rb_to_top{
+		position: fixed;
+	    right: 45px;
+	    bottom: 40px;
+	    width: 50px;
+	    height: 50px;
 	}
 	
 	#rb_product_list #student_slab,#rb_product_list #child_slab, #rb_product_list #watch{
@@ -192,8 +189,8 @@
 		height: 0.52rem;
 		line-height: 0.52rem;
 		font-size: 0.24rem;
-		color: #333333;
-		border: 1px solid #999999;
+		/*color: #333333;
+		border: 1px solid #999999;*/
 		border-radius: 0.26rem;
 		z-index: 2;
 	}
@@ -228,7 +225,7 @@
 		text-align: center;
 		font-size: 0.6rem;
 		font-weight: 600;
-		color: white;
+		/*color: white;*/
 		z-index: 2;
 	}
 
@@ -244,7 +241,7 @@
 		width: 100%;
 		text-align: center;
 		font-size: 0.3rem;
-		color: white;
+		/*color: white;*/
 		z-index: 2;
 	}
 	.rb_products_2 .rb_products_item_link{
@@ -253,21 +250,21 @@
 	}
 	.rb_products_2 .rb_products_item_link:first-of-type{
 		position: absolute;
-		left: 1.45rem;
+		left: 16.66667%;
 		top: 31.367%;
 		width: 2.1rem;
 		text-align: center;
 		height: 0.52rem;
 		line-height: 0.52rem;
 		font-size: 0.24rem;
-		color: white;
-		border: 1px solid white;
+		/*color: white;
+		border: 1px solid white;*/
 		border-radius: 0.26rem;
 		z-index: 2;
 	}
 	.rb_products_2 .rb_products_item_link:last-child{
 		position: absolute;
-		right: 1.45rem;
+		right: 16.66667%;
 		top: 31.367%;
 		width: 2.1rem;
 		text-align: center;
@@ -314,10 +311,35 @@
 		height: 0.52rem;
 		line-height: 0.52rem;
 		font-size: 0.24rem;
-		color: #0d0d0d;
-		border: 1px solid #0d0d0d;
+		/*color: #0d0d0d;
+		border: 1px solid #0d0d0d;*/
 		border-radius: 0.26rem;
 		z-index: 2;
+	}
+
+	/*偏黑色字体*/
+	.blackColor .rb_products_item_name{
+		color: black;
+	}
+	.blackColor .rb_products_item_descrip{
+		color: black;
+	}
+	.blackColor .rb_products_item_link:first-of-type{
+		color: #333333;
+		border: 1px solid #999999;
+	}
+
+
+	/*偏白色字体*/
+	.whiteColor .rb_products_item_name{
+		color: white;
+	}
+	.whiteColor .rb_products_item_descrip{
+		color: white;
+	}
+	.whiteColor .rb_products_item_link:first-of-type{
+		color: white;
+		border: 1px solid white;
 	}
 }
 
