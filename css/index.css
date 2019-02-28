@@ -30,13 +30,13 @@
 	#rb_product_list{
 		margin: 0 auto;
 		width: 1172px;
-		font-family: '黑体';
+		font-family: 'Microsoft YaHei';
 	}
 }
 @media all and  (max-width: 1171px){
 	#rb_product_list{
 		width: 100%;
-		font-family: '黑体';
+		font-family: 'Microsoft YaHei';
 	}
 }
 
@@ -116,11 +116,19 @@
 	#rb_product_list .rb_products .rb_products_item .rb_products_item_link{
 		box-sizing: border-box;
 		margin: auto;
-		padding-top: 1%;
 		position: absolute;
 		left: 0px;
 		right: 0px;
 		bottom: 9.318%;
+		display: -webkit-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
 		width: 20.862%;
 		height: 7.045%;
 		border: 1px solid #999;
@@ -135,6 +143,13 @@
 		background-color: #e60012;
 		color: white;
 		border: 1px solid #e60012;
+	}
+	#rb_product_list .rb_products .rb_products_item .rb_products_item_link span{
+		/*margin: auto;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 12%;*/
 	}
 	.rb_products:last-child{
 		margin-bottom: 2.846%;
